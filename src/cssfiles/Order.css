@@ -1,0 +1,38 @@
+/* Orders Table Styling */
+.orders-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Headings */
+th {
+  text-align: left;
+  padding: 10px;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc; /* Border only under headings */
+}
+
+/* Order date heading */
+thead {
+  background-color: #f8f8f8;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 8px;
+}
+
+/* Rows */
+td {
+  padding: 10px;
+}
+
+/* Zebra stripe effect */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}

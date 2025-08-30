@@ -1,0 +1,74 @@
+.home-main-component {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.home-header {
+  margin: auto;
+}
+
+.home-header input {
+  width: 500px;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.home-body {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  /* Removed space-between to keep sidebar and content aligned */
+}
+
+.home-sidebar {
+  background: #f0f0fc;
+  border-radius: 10px;
+  left: 0;
+  padding: 1rem;
+  position: fixed;
+  text-align: center;
+  top: 30%;
+  width: 14rem;
+}
+
+.home-content {
+  margin-left: 17rem; /* This creates space for fixed sidebar */
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: auto; /* Let content take remaining space */
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(64, 77, 148, 0.4);
+  transition: all 0.25s ease-in-out;
+  /* You can control card size here for better layout, e.g.: */
+  width: 200px;
+}
+.product-card button {
+  background-color: rgb(65, 3, 70);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.product-card button:hover {
+  background-color: red;
+}
